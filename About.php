@@ -8,32 +8,10 @@
         <title>ETHICAL EDGE - About Our Team</title>
     </head>
     <body>
-    <input type="checkbox" id="menu-toggle">
-        <header>
+    
 
 <?php include 'header.inc';?>
 
-</header>
-
-<div class="side-menu">
-
-<label for="menu-toggle" class="close-btn">✕</label>
-
-<div class="menu-links">
-<a href="Homepg.html">Home Page</a>
-<a href="jobapplication.html">Job Application</a>
-<a href="jobs.html">Job Description</a>
-<a href="About.html" class="active">About</a>
-</div>
-
-<div class="menu-footer">
-<img src="Image/Logo.JPG">
-<h2>ETHICAL <span>EDGE</span></h2>
-</div>
-
-</div>
-
-<label for="menu-toggle" class="overlay"></label>
 
 <div class="About" style="padding:128px 16px" id="team">
     <h1 class="About" id="Title_about">THE TEAM</h1>
