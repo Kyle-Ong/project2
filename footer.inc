@@ -2,7 +2,7 @@
 
   <!-- GitHub repository link -->
   <div class="footer-left">
-    <a href="https://github.com/Kyle-Ong/Assignment.git" target="_blank">
+    <a href="https://github.com/Kyle-Ong/project2.git" target="_blank">
       <i class="fab fa-github"></i> GitHub Repository
     </a>
   </div>
