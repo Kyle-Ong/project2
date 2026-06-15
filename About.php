@@ -19,12 +19,26 @@
     <h2 class="About" id="Title_about">The ones who runs this company</h2>
     <img id="GroupImg" src="Image/Group.jpg" alt="GroupPhoto" title="GroupPhoto">
 
-    <h3 id="LabelAbout">Group: 5 Group Name: Newbie Corders
-        <ul>
-            <li>Tuesday(2-4p.m.)</li>
-            <li>Wednesday(8-10)</li>
-        </ul>
-    </h3>
+   <h3 id="LabelAbout">Group: 5 Group Name: Newbie Corders</h3>
+
+<div class="list-center">
+  <ul class="nested-list">
+    <li>
+      Day
+      <ol class="nested-list">
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+      </ol>
+    </li>
+    <li>
+      Time
+      <ol>
+        <li>2-4p.m.</li>
+        <li>8-10a.m.</li>
+      </ol>
+    </li>
+  </ul>
+</div>
 </div>
 
 <section>

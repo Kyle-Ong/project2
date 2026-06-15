@@ -364,3 +364,18 @@ header {
   opacity: 1;
   pointer-events: auto;
 }
+
+.list-center {
+  display: flex;
+  justify-content: center;
+}
+
+.list-center .nested-list {
+  text-align: left;
+  padding-left: 20px;
+  color: #F5D76E; 
+}
+
+.list-center .nested-list li > ol {
+    padding-left: 25px;
+}
