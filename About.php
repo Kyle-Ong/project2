@@ -165,26 +165,8 @@
     </div>
     </section>
 
-<footer class="footer">
+<?php include 'footer.inc';?>
 
-  <div class="footer-left">
-  <a href="https://github.com/Kyle-Ong/Assignment.git" target="_blank">
-    GitHub Repository
-  </a>
-</div>
-
-  <div class="footer-center">
-    © 2026 Ethical Edge <br>
-    <span>Integrity • Innovation • Excellence</span>
-  </div>
-
- <div class="footer-right">
-  <a href="https://student-team-d84k44vi.atlassian.net" target="_blank">
-    <i class="fab fa-jira"></i> Jira Dashboard
-  </a>
-</div>
-
-</footer>
     </body>
 
 </html>
