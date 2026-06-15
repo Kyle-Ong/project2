@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap">
         <link rel="stylesheet" href="Homepage.css">
-        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="main.css">
         <title>ETHICAL EDGE - About Our Team</title>
     </head>
     <body>
