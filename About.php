@@ -5,23 +5,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap">
         <link rel="stylesheet" href="Homepage.css">
         <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="about.css">
         <title>ETHICAL EDGE - About Our Team</title>
     </head>
     <body>
     <input type="checkbox" id="menu-toggle">
         <header>
 
-<label for="menu-toggle" class="menu-icon">☰</label>
-
-<div class="brand">
-<a href="Homepg.html"><img src="Image/Logo.JPG" alt="Logo" title="Home_page"></a>
-
-<div class="brand-text">
-<h1>ETHICAL <span>EDGE</span></h1>
-<p>Integrity. Impact. Excellence.</p></a>
-</div>
-</div>
+<?php include 'header.inc';?>
 
 </header>
 
