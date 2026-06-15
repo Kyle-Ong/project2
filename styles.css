@@ -1,0 +1,321 @@
+/* ===================== */
+/* GOOGLE FONTS */
+/* ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* ===================== */
+/* RESET */
+/* ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ===================== */
+/* BODY */
+/* ===================== */
+body {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  color: #fff;
+  background:
+    radial-gradient(circle at 70% 30%, rgba(255,200,0,0.15), transparent),
+    radial-gradient(circle at 20% 80%, rgba(0,80,255,0.25), transparent),
+    #000;
+}
+
+
+/* ===================== */
+/* HEADINGS */
+/* ===================== */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+/* ===================== */
+/* HERO */
+/* ===================== */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+
+/* ===================== */
+/* FILTER BUTTONS */
+/* ===================== */
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  background: #111;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 10px gold;
+}
+
+
+/* ===================== */
+/* JOB SECTION */
+/* ===================== */
+.jobs {
+  padding: 40px 20px;
+}
+
+
+/* ===================== */
+/* ROW */
+/* ===================== */
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+}
+
+
+/* ===================== */
+/* CARD */
+/* ===================== */
+.card {
+  width: 300px;
+  background: rgba(0,0,0,0.75);
+  border: 1px solid rgba(255,215,0,0.5);
+  border-radius: 18px;
+  padding: 22px;
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px;
+
+  transition: all 0.3s ease;
+
+  /* scroll fix */
+  scroll-margin-top: 120px;
+}
+
+
+/* ===================== */
+/* HOVER EFFECT */
+/* ===================== */
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 30px rgba(255,215,0,0.8);
+}
+
+
+/* ===================== */
+/* CLICK EFFECT (NO JS) */
+/* ===================== */
+.card:target {
+  transform: scale(1.08);
+  box-shadow: 0 0 60px gold;
+  border-color: gold;
+}
+
+
+/* ===================== */
+/* CARD TEXT */
+/* ===================== */
+.card h3 {
+  margin-bottom: 6px;
+}
+
+.card span {
+  color: gold;
+}
+
+.meta {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.card ul {
+  margin-left: 18px;
+  margin-bottom: 10px;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.card h4 {
+  margin: 10px 0 5px;
+  font-size: 15px;
+}
+
+
+/* ===================== */
+/* SKILLS */
+/* ===================== */
+.skills {
+  margin: 10px 0;
+}
+
+.skills span {
+  display: inline-block;
+  background: #111;
+  padding: 6px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 6px;
+  font-size: 12px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: gold;
+  color: black;
+}
+
+
+/* ===================== */
+/* DEADLINE */
+/* ===================== */
+.deadline {
+  color: gold;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+
+/* ===================== */
+/* APPLY BUTTON (IMPORTANT) */
+/* ===================== */
+.apply-btn {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  background: gold;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background: orange;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px gold;
+}
+
+
+/* ===================== */
+/* WHY SECTION */
+/* ===================== */
+.why {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.why h2 {
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stats h3 {
+  color: gold;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.why-grid div {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.why-grid div:hover {
+  border-color: gold;
+  box-shadow: 0 0 15px gold;
+}
+
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid gold;
+  color: #aaa;
+  font-size: 14px;
+}
+
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
