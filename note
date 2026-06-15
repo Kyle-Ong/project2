@@ -3,3 +3,9 @@ http://localhost/COS%2010026/Assignment/project2/--to reach test server
 <?php include 'header.inc';?>--header
 
 <?php include 'footer.inc';?>--footer
+
+<git remote add origin https://github.com/Kyle-Ong/project2.git
+
+git branch -M main
+
+git push -u origin main> --commit code
