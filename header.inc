@@ -28,10 +28,10 @@
 
   <!-- Navigation links -->
   <div class="menu-links">
-    <a href="Homepg.html" class="active">Homepage</a>
-    <a href="jobs.html">Job Description</a>
-    <a href="jobapplication.html">Job Application</a>
-    <a href="about.html">About</a>
+    <a href="index.php" class="active">Homepage</a>
+    <a href="jobs.php">Job Description</a>
+    <a href="jobapplication.php">Job Application</a>
+    <a href="about.php">About</a>
   </div>
 
   <!-- Footer branding inside menu -->
