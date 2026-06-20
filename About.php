@@ -1,11 +1,48 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require_once('conn.php');
+
+$charset = 'utf8mb4';
+$dsn = "mysql:host=$host;dbname=$sql_db;charset=$charset";
+
+try {
+     $pdo = new PDO($dsn, $user, $pwd);
+     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (\PDOException $e) {
+     die("connection fail" . $e->getMessage());
+}
+
+$contributions = [];
+if (isset($pdo)) {
+    try {
+        $stmt = $pdo->query('SELECT student_id, project_1_tasks, project_2_tasks FROM member_contributions');
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $contributions[$row['student_id']] = $row;
+        }
+    } catch (\PDOException $e) {
+        die("read fail" . $e->getMessage());
+    }
+}
+function getMemberTask($id, $project, $contributions) {
+    if (isset($contributions[$id][$project])) {
+        return htmlspecialchars($contributions[$id][$project]);
+    }
+    return 'no record';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="Homepage.css">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main.css?v=<?php echo time(); ?>">
+        
+        <link rel="stylesheet" href="contributions.css">
+        
         <title>ETHICAL EDGE - About Our Team</title>
     </head>
     <body>
@@ -71,6 +108,10 @@
                             <li><strong>🏆 Dream Job: </strong> be a professional Gamer</li>
                             <li><strong>📍 Hometown: </strong> Kuala Lumpur</li>
                         </ul>
+                        <div class="project-task">
+                            <p><strong>🚀 <em>Project 1:</em></strong> <?php echo getMemberTask('j24041246', 'project_1_tasks', $contributions); ?></p>
+                            <p><strong>🚀 <em>Project 2:</em></strong> <?php echo getMemberTask('j24041246', 'project_2_tasks', $contributions); ?></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,6 +145,10 @@
                             <li><strong>🏆 Dream Job: </strong> Doing well in corporate</li>
                             <li><strong>📍 Hometown: </strong> Dhaka Bangladesh</li>
                         </ul>
+                        <div class="project-task">
+                            <p><strong>🚀 <em>Project 1:</em></strong> <?php echo getMemberTask('j25044579', 'project_1_tasks', $contributions); ?></p>
+                            <p><strong>🚀 <em>Project 2:</em></strong> <?php echo getMemberTask('j25044579', 'project_2_tasks', $contributions); ?></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,6 +185,10 @@
                             <li><strong>🏆 Dream Job: </strong> Software Engineer</li>
                             <li><strong>📍 Hometown: </strong> Bangladesh</li>
                         </ul>
+                        <div class="project-task">
+                            <p><strong>🚀 <em>Project 1:</em></strong> <?php echo getMemberTask('j26046174', 'project_1_tasks', $contributions); ?></p>
+                            <p><strong>🚀 <em>Project 2:</em></strong> <?php echo getMemberTask('j26046174', 'project_2_tasks', $contributions); ?></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,6 +222,10 @@
                             <li><strong>🏆 Dream Job: </strong> Software Engineer</li>
                             <li><strong>📍 Hometown: </strong> Bangladesh</li>
                         </ul>
+                        <div class="project-task">
+                            <p><strong>🚀 <em>Project 1:</em></strong> <?php echo getMemberTask('j25045535', 'project_1_tasks', $contributions); ?></p>
+                            <p><strong>🚀 <em>Project 2:</em></strong> <?php echo getMemberTask('j25045535', 'project_2_tasks', $contributions); ?></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,5 +236,4 @@
 <?php include 'footer.inc';?>
 
     </body>
-
 </html>
