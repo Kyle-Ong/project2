@@ -39,7 +39,7 @@ function getMemberTask($id, $project, $contributions) {
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="main.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="Styles/main.css?v=<?php echo time(); ?>">
         
         <link rel="stylesheet" href="contributions.css">
         
