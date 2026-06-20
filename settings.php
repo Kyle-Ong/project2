@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pwd = "EthicalE123";
+$pwd = "";
 $sql_db = "Newbie_db";
 ?>
