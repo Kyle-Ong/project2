@@ -8,7 +8,7 @@
 
   <!-- Branding section with logo and title -->
   <div class="brand">
-    <a href="Homepg.html">
+    <a href="index.php">
       <img src="Image/Logo.JPG" alt="Ethical Edge Logo" title="Home_page">
     </a>
 
@@ -28,10 +28,12 @@
 
   <!-- Navigation links -->
   <div class="menu-links">
-    <a href="Homepg.html" class="active">Homepage</a>
-    <a href="jobs.html">Job Description</a>
-    <a href="jobapplication.html">Job Application</a>
-    <a href="about.html">About</a>
+    <a href="index.php">Homepage</a>
+    <a href="jobs.php">Job Description</a>
+    <a href="jobapplication.php">Job Application</a>
+    <a href="about.php">About</a>
+    <!-- Added for Assignment Part 4 (HR portal entry point) -->
+    <a href="login.php" style="border-top: 1px solid rgba(212,175,55,0.3); padding-top: 15px; margin-top: 15px;"><i class="fas fa-lock"></i> HR Manager Portal</a>
   </div>
 
   <!-- Footer branding inside menu -->
