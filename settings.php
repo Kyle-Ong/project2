@@ -2,5 +2,5 @@
 $host = "localhost";
 $user = "root";
 $pwd = "";
-$sql_db = "Newbie_db";
+$sql_db = "newbie_db";
 ?>
