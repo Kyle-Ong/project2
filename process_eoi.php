@@ -5,7 +5,7 @@
 $host = "localhost";
 $user = "root";
 $pwd = "";
-$dbname = "Newbie_db";
+$dbname = "newbie_db";
 
 $conn = new mysqli($host, $user, $pwd);
 
