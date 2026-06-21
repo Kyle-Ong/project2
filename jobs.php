@@ -1,8 +1,8 @@
 <?php
 // Inline database configuration to bypass external settings.php file dependencies
-$host   = "localhost";
-$user   = "root";
-$pwd    = ""; // Default XAMPP password is empty
+$host    = "localhost";
+$user    = "root";
+$pwd     = ""; // Default XAMPP password is empty
 $sql_db = "ethical_edge_db"; 
 
 $conn = mysqli_connect($host, $user, $pwd, $sql_db);
@@ -19,7 +19,7 @@ if (!$conn) {
   <title>Ethical Edge - Careers</title>
 
   <!-- External Typography & Icon Frameworks -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Core Team Stylesheet -->
@@ -31,7 +31,7 @@ if (!$conn) {
   <style>
     /* ===== BODY SCOPE OVERRIDE ===== */
     body.jobs-view {
-      font-family: 'Poppins', sans-serif !important;
+      font-family: 'Orbitron', sans-serif !important; /* Changed from Poppins to match index.php */
       color: white;
       overflow-x: hidden;
       background: #020617 !important;
@@ -55,7 +55,6 @@ if (!$conn) {
     }
 
     #jobs-page-wrapper .hero h1 {
-      font-family: 'Orbitron', sans-serif;
       font-size: 48px;
       color: #D4AF37;
       margin-bottom: 15px;
@@ -66,7 +65,7 @@ if (!$conn) {
       color: #94a3b8;
       max-width: 600px;
       margin: 0 auto 30px auto;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.6;
     }
 
@@ -79,7 +78,6 @@ if (!$conn) {
     }
 
     #jobs-page-wrapper .buttons a {
-      font-family: 'Orbitron', sans-serif;
       text-decoration: none;
       color: white;
       border: 1px solid rgba(212,175,55,0.4);
@@ -132,7 +130,6 @@ if (!$conn) {
     }
 
     #jobs-page-wrapper .card h3 {
-      font-family: 'Orbitron', sans-serif;
       font-size: 22px;
       color: white;
       margin-top: 0;
@@ -149,7 +146,7 @@ if (!$conn) {
     }
 
     #jobs-page-wrapper .card .meta {
-      font-size: 13px;
+      font-size: 12px;
       color: #64748b;
       font-weight: 500;
       margin-bottom: 20px;
@@ -159,13 +156,12 @@ if (!$conn) {
 
     #jobs-page-wrapper .card .desc {
       color: #cbd5e1;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.6;
       margin-bottom: 25px;
     }
 
     #jobs-page-wrapper .card h4 {
-      font-family: 'Orbitron', sans-serif;
       color: #D4AF37;
       font-size: 14px;
       text-transform: uppercase;
@@ -183,7 +179,7 @@ if (!$conn) {
 
     #jobs-page-wrapper .card ul li {
       color: #cbd5e1;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.5;
       margin-bottom: 8px;
     }
@@ -207,7 +203,7 @@ if (!$conn) {
     }
 
     #jobs-page-wrapper .card .deadline {
-      font-size: 13px;
+      font-size: 12px;
       color: #94a3b8;
       margin-bottom: 25px;
       border-top: 1px solid rgba(255,255,255,0.05);
@@ -218,7 +214,6 @@ if (!$conn) {
     #jobs-page-wrapper .apply-btn {
       display: block !important;
       text-align: center !important;
-      font-family: 'Orbitron', sans-serif;
       text-decoration: none;
       background: #D4AF37;
       color: #020617;
@@ -245,7 +240,6 @@ if (!$conn) {
     }
 
     #jobs-page-wrapper .why h2 {
-      font-family: 'Orbitron', sans-serif;
       color: #D4AF37;
       font-size: 32px;
       margin-bottom: 50px;
@@ -261,7 +255,6 @@ if (!$conn) {
     }
 
     #jobs-page-wrapper .stats h3 {
-      font-family: 'Orbitron', sans-serif;
       font-size: 42px;
       color: white;
       margin: 0 0 5px 0;
@@ -270,7 +263,7 @@ if (!$conn) {
     #jobs-page-wrapper .stats p {
       color: #94a3b8;
       margin: 0;
-      font-size: 14px;
+      font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
@@ -293,7 +286,6 @@ if (!$conn) {
     }
 
     #jobs-page-wrapper .why-grid h4 {
-      font-family: 'Orbitron', sans-serif;
       color: white;
       margin-top: 0;
       margin-bottom: 10px;
