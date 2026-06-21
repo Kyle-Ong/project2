@@ -51,7 +51,7 @@ function getMemberTask($id, $project, $contributions) {
 <body class="apply-view">
 
 <?php 
-// Links directly to your template components inside the root directory
+
 include_once 'header.inc'; 
 ?>
 
