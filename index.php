@@ -15,7 +15,6 @@
 <body class="homepage-view">
 
 <?php 
-// Links directly to your exact file: 'header.inc'
 include_once 'header.inc'; 
 ?>
 
@@ -132,7 +131,6 @@ include_once 'header.inc';
 </main>
 
 <?php 
-// Links directly to your exact file: 'footer.inc'
 include_once 'footer.inc'; 
 ?>
 
