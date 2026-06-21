@@ -50,7 +50,7 @@ $sort_field  = trim($_GET['sort_field'] ?? 'EOInumber');
 $allowed_sorts = ['EOInumber', 'jobRef', 'fname', 'lname', 'date_applied', 'status'];
 if (!in_array($sort_field, $allowed_sorts)) { $sort_field = 'EOInumber'; }
 
-// Dynamic Query Joined with your teammate's jobs table!
+// Dynamic Query Joined with  jobs table!
 $query = "SELECT eoi.*, jobs.title AS job_title 
           FROM eoi 
           LEFT JOIN jobs ON eoi.jobRef = jobs.job_reference 
