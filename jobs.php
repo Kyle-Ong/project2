@@ -1,8 +1,8 @@
 <?php
-// Inline database configuration to bypass external settings.php file dependencies
+
 $host    = "localhost";
 $user    = "root";
-$pwd     = ""; // Default XAMPP password is empty
+$pwd     = ""; 
 $sql_db = "ethical_edge_db"; 
 
 $conn = mysqli_connect($host, $user, $pwd, $sql_db);
@@ -18,33 +18,31 @@ if (!$conn) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ethical Edge - Careers</title>
 
-  <!-- External Typography & Icon Frameworks -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Core Team Stylesheet -->
+  
   <link rel="stylesheet" href="main.css">
 
-  <!-- ==================================================== -->
-  <!-- INTEGRATED JOB DESCRIPTIONS PAGE STYLES              -->
-  <!-- ==================================================== -->
+  
   <style>
-    /* ===== BODY SCOPE OVERRIDE ===== */
+    
     body.jobs-view {
-      font-family: 'Orbitron', sans-serif !important; /* Changed from Poppins to match index.php */
+      font-family: 'Orbitron', sans-serif !important; 
       color: white;
       overflow-x: hidden;
       background: #020617 !important;
     }
 
-    /* ===== MAIN ISOLATION CONTAINER ===== */
+    
     #jobs-page-wrapper {
       width: 100%;
       min-height: 100vh;
       box-sizing: border-box;
     }
 
-    /* ===== HERO SECTION ===== */
+    
     #jobs-page-wrapper .hero {
       background: 
         radial-gradient(circle at 50% 50%, rgba(212,175,55,0.1), transparent 60%),
@@ -69,7 +67,7 @@ if (!$conn) {
       line-height: 1.6;
     }
 
-    /* Filter Buttons Container */
+    
     #jobs-page-wrapper .buttons {
       display: flex !important;
       justify-content: center !important;
@@ -96,7 +94,7 @@ if (!$conn) {
       transform: translateY(-2px);
     }
 
-    /* ===== DYNAMIC JOBS LISTING SECTION ===== */
+    
     #jobs-page-wrapper .jobs {
       padding: 80px 60px;
       max-width: 1300px;
@@ -110,7 +108,7 @@ if (!$conn) {
       width: 100% !important;
     }
 
-    /* Individual Card Layout */
+    
     #jobs-page-wrapper .card {
       background: rgba(15, 23, 42, 0.4) !important;
       border: 1px solid rgba(212,175,55,0.15) !important;
@@ -382,7 +380,7 @@ include_once 'header.inc';
             <strong>Deadline:</strong> <?php echo htmlspecialchars($row['deadline']); ?>
           </p>
 
-          <!-- Links cleanly to your newly established job application page -->
+          
           <a href="jobapplication.php" class="apply-btn">Apply Now</a>
         </div>
       </div>
@@ -414,7 +412,7 @@ include_once 'header.inc';
 </main>
 
 <?php 
-// Links directly to your layout footer component
+
 include_once 'footer.inc'; 
 ?>
 
